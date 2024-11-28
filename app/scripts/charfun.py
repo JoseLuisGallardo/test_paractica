@@ -9,7 +9,7 @@ Ultima Modificación. 21/11/2024
 Autor. Gregorio Coronado Morón 
 Dependencias. Unicodedata  
 """ 
-
+import unicodedata
 
 def es_palindromo(cadena): 
     """ 
