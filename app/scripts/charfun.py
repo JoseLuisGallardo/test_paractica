@@ -15,7 +15,10 @@ def es_palindromo(cadena):
     """ 
     Función que verifica si una cadena es palíndroma. 
     Ignora espacios, mayúsculas y tildes. 
-    """ 
+    """
+    if not isinstance(cadena, str):
+        raise TypeError(f"La entrada debe ser una cadena de texto, pero se recibió {type(cadena).__name__}.")
+    
     # Convertir la cadena a minúsculas y eliminar caracteres no alfabéticos 
     cadena_limpia = ''.join(char.lower() for char in cadena if char.isalnum()) 
     # Comparar la cadena limpia con su reverso 
