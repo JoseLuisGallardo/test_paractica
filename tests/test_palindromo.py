@@ -37,5 +37,18 @@ class TestEsPalindromo(unittest.TestCase):
             with self.assertRaises(TypeError, msg=f"Se esperaba TypeError con la entrada {entrada}."):
                 es_palindromo(entrada)
 
+    def test_assert_equal(self):
+        # Comparar resultados explícitos
+        self.assertEqual(
+            es_palindromo("reconocer"),
+            True,
+            "La cadena 'reconocer' debería ser un palíndromo."
+        )
+        self.assertEqual(
+            es_palindromo("python"),
+            False,
+            "La cadena 'python' no debería ser un palíndromo."
+        )
+
 if __name__ == "__main__":
     unittest.main()
