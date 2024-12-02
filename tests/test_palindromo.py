@@ -1,5 +1,5 @@
 import unittest
-from charfun import es_palindromo
+from app.scripts.charfun import es_palindromo
 
 class TestEsPalindromo(unittest.TestCase):
 
